@@ -1,0 +1,16 @@
+PODS:
+  - SunbeamTimerService (0.1.5)
+
+DEPENDENCIES:
+  - SunbeamTimerService (from `../`)
+
+EXTERNAL SOURCES:
+  SunbeamTimerService:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SunbeamTimerService: daf938e8514c5620744aef4ff6a8001803590480
+
+PODFILE CHECKSUM: e2cefc6487d11e8d1c0e62de5c48ac8d3ede0ab0
+
+COCOAPODS: 1.0.1

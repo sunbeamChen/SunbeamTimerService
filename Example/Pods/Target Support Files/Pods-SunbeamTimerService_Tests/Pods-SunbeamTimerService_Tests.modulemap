@@ -1,0 +1,6 @@
+framework module Pods_SunbeamTimerService_Tests {
+  umbrella header "Pods-SunbeamTimerService_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
