@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SunbeamTimerService_Example' do
+  pod 'SunbeamTimerService', :path => '../'
+
+  target 'SunbeamTimerService_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
