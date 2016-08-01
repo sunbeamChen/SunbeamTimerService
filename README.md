@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/SunbeamTimerService.svg?style=flat)](http://cocoapods.org/pods/SunbeamTimerService)
 [![Platform](https://img.shields.io/cocoapods/p/SunbeamTimerService.svg?style=flat)](http://cocoapods.org/pods/SunbeamTimerService)
 
+## Description
+A simple NSTimer manager for develop.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+iOS > 7.0
 
 ## Installation
 

@@ -1,7 +1,7 @@
 {
   "name": "SunbeamTimerService",
   "version": "0.1.5",
-  "summary": "A short description of SunbeamTimerService.",
+  "summary": "A simple NSTimer manager for develop.",
   "homepage": "https://github.com/sunbeamChen/SunbeamTimerService",
   "license": {
     "type": "MIT",
