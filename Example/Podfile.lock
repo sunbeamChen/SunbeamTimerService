@@ -1,5 +1,5 @@
 PODS:
-  - SunbeamTimerService (0.1.5)
+  - SunbeamTimerService (0.1.6)
 
 DEPENDENCIES:
   - SunbeamTimerService (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SunbeamTimerService: 2e4436397c49a09df14e135ee62fadbcb950be76
+  SunbeamTimerService: 1c71501d3eddff124a85bc9ee0f53fbba405bb89
 
 PODFILE CHECKSUM: e2cefc6487d11e8d1c0e62de5c48ac8d3ede0ab0
 

@@ -22,7 +22,7 @@
 	
     [SunbeamTimerManager sharedSunbeamTimerManager].delegate = self;
     
-    [[SunbeamTimerManager sharedSunbeamTimerManager] addSunbeamTimer:@"5s" name:@"5s" desc:@"5s timer" timeInterval:5.0 userInfo:nil repeats:NO];
+    [[SunbeamTimerManager sharedSunbeamTimerManager] addSunbeamTimer:@"5s" name:@"5s" desc:@"5s timer" timeInterval:5.0 userInfo:nil repeats:YES];
     
     [[SunbeamTimerManager sharedSunbeamTimerManager] addSunbeamTimer:@"10s" name:@"10s" desc:@"10s timer" timeInterval:10.0 userInfo:nil repeats:NO];
     
@@ -34,7 +34,11 @@
 - (void) SunbeamTimerExecute:(NSString *) identifier userInfo:(NSDictionary *) userInfo
 {
     if ([@"5s" isEqualToString:identifier]) {
-        [[SunbeamTimerManager sharedSunbeamTimerManager] clearAllSunbeamTimer];
+        NSLog(@"5s执行");
+    } else if ([@"10s" isEqualToString:identifier]) {
+        NSLog(@"10s执行");
+    } else if ([@"20s" isEqualToString:identifier]) {
+        NSLog(@"20s执行");
     }
 }
 

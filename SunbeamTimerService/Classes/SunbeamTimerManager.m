@@ -10,7 +10,7 @@
 
 #import "SunbeamTimerEventDispatcher.h"
 
-#define SUNBEAM_TIMER_SERVICE_VERSION @"0.1.5"
+#define SUNBEAM_TIMER_SERVICE_VERSION @"0.1.6"
 
 #define NSTIMER_USERINFO_IDENTIFIER_KEY @"userInfo_identifier"
 
@@ -139,7 +139,7 @@
         NSTimer* tempTimer = timer;
         if ([self.delegate respondsToSelector:@selector(SunbeamTimerExecute:userInfo:)]) {
             NSDictionary* userInfo = tempTimer.userInfo;
-            [self destroySunbeamTimer:[userInfo objectForKey:NSTIMER_USERINFO_IDENTIFIER_KEY]];
+            //[self destroySunbeamTimer:[userInfo objectForKey:NSTIMER_USERINFO_IDENTIFIER_KEY]];
             [self.delegate SunbeamTimerExecute:[userInfo objectForKey:NSTIMER_USERINFO_IDENTIFIER_KEY] userInfo:[userInfo objectForKey:NSTIMER_USERINFO_SELF_KEY]];
         }
     }
