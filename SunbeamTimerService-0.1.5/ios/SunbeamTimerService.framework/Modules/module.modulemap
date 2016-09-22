@@ -1,6 +1,0 @@
-framework module SunbeamTimerService {
-  umbrella header "SunbeamTimerService.h"
-
-  export *
-  module * { export * }
-}
