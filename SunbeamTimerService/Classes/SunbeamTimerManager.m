@@ -10,7 +10,7 @@
 
 #import "SunbeamTimerEventDispatcher.h"
 
-#define SUNBEAM_TIMER_SERVICE_VERSION @"0.1.6"
+#import <MSWeakTimer/MSWeakTimer.h>
 
 #define NSTIMER_USERINFO_IDENTIFIER_KEY @"userInfo_identifier"
 
@@ -90,7 +90,7 @@
     if (userInfo) {
         [userInfoDictionary setObject:userInfo forKey:NSTIMER_USERINFO_SELF_KEY];
     }
-    stimer.timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(stimerExecuteSelector:) userInfo:userInfoDictionary repeats:repeats];
+    stimer.timer = [MSWeakTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(stimerExecuteSelector:) userInfo:userInfoDictionary repeats:repeats dispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
     // 更新STimer cache
     [[SunbeamTimerEventDispatcher sharedSunbeamTimerEventDispatcher] dispatchEvent:stimer eventType:SunbeamTimerEventType_Add params:nil];
 }
@@ -133,14 +133,19 @@
 
 #pragma mark - timer selector
 // NSTimer execute selector
-- (void) stimerExecuteSelector:(NSTimer *) timer
+- (void) stimerExecuteSelector:(MSWeakTimer *) timer
 {
     @synchronized (self.executeSTimerToken) {
-        NSTimer* tempTimer = timer;
+        MSWeakTimer* tempTimer = timer;
+        NSString* identifier = [tempTimer.userInfo objectForKey:NSTIMER_USERINFO_IDENTIFIER_KEY];
+        NSDictionary* userInfo = [tempTimer.userInfo objectForKey:NSTIMER_USERINFO_SELF_KEY];
         if ([self.delegate respondsToSelector:@selector(SunbeamTimerExecute:userInfo:)]) {
-            NSDictionary* userInfo = tempTimer.userInfo;
-            //[self destroySunbeamTimer:[userInfo objectForKey:NSTIMER_USERINFO_IDENTIFIER_KEY]];
-            [self.delegate SunbeamTimerExecute:[userInfo objectForKey:NSTIMER_USERINFO_IDENTIFIER_KEY] userInfo:[userInfo objectForKey:NSTIMER_USERINFO_SELF_KEY]];
+            [self.delegate SunbeamTimerExecute:identifier userInfo:userInfo];
+        }
+        // 定时器执行后移除
+        SunbeamTimer* stimer = [self.sunbeamtimerList objectForKey:identifier];
+        if (!stimer.repeats) {
+            [self.sunbeamtimerList removeObjectForKey:identifier];
         }
     }
 }

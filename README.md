@@ -28,6 +28,10 @@ pod "SunbeamTimerService"
 
 sunbeamChen, chenxun1990@126.com
 
+## Third pod 
+
+thank you [MSWeakTimer](https://github.com/mindsnacks/MSWeakTimer).
+
 ## License
 
 SunbeamTimerService is available under the MIT license. See the LICENSE file for more info.

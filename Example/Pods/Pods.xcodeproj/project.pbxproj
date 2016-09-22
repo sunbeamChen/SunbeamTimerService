@@ -1,709 +1,2240 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		07BFB475B46F0FDAE32348EB92EF4752 /* SunbeamTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E208488B5043EA16316E3EC5845E40 /* SunbeamTimer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0ED12406C913FCD33AED773502919ECD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		11391476294B0035C417453BD68E4D65 /* SunbeamTimerService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27703EC42DC064B0ACA6AED9C53E049D /* SunbeamTimerService-dummy.m */; };
-		157B93F638834098AA1A62C87F27F0B7 /* SunbeamTimerEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CB2477E497208F839DD7E6E6120B9B /* SunbeamTimerEventDispatcher.m */; };
-		1A77F30A7BFBFF979BA69F980AAAB0EF /* SunbeamTimerService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B826159F1FE0307F4998179917EFD3 /* SunbeamTimerService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A8C5B0E01EC733EAE4450C09206A84D /* Pods-SunbeamTimerService_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDE29DC67FE6000B0C8E40A83D086C5 /* Pods-SunbeamTimerService_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		264B1BC51BB7264740B87304680F00F2 /* Pods-SunbeamTimerService_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 809380ED1E3EFA009C6820D04B0DBBC4 /* Pods-SunbeamTimerService_Example-dummy.m */; };
-		267B694FD400F4A360DED9B11D7D8F43 /* SunbeamTimerEventDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C31D67BA58B341D5AFE2E8C8339930 /* SunbeamTimerEventDispatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		30CE8BCC34327450626BF9591F2B8203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		5A2585ADDFB44627D295FBFB81C0025C /* SunbeamTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F8EF1667671EDDC0D018A031A6FB6 /* SunbeamTimerManager.m */; };
-		5BC4525C1FE79B039E78BCDD2EF38E71 /* SunbeamTimerService.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6F09873749C747BB7C33D0123BBDC2 /* SunbeamTimerService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88F4B79FA9FE79D8EDB955A011C74B7D /* Pods-SunbeamTimerService_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF4E51C3796FF1756D986ADA9C053E6 /* Pods-SunbeamTimerService_Tests-dummy.m */; };
-		8C0D5B07E5D8E0A09D8E89B8C7455751 /* Pods-SunbeamTimerService_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D49CE95D4AE86D77536C9627A9D962E1 /* Pods-SunbeamTimerService_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D6CDBB0B1E742370D53AD8472D2C68B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		F69D5DB82F499C6F74863956A1067705 /* SunbeamTimerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA48FA0B2AB213076C0AF40B62C054B /* SunbeamTimerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6A83D2C0F826FB09630A6B600B7616D /* SunbeamTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C765FFC64FB90EF970141D807AA9D5CA /* SunbeamTimer.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1695BD20DC9DCE73A5827CB0091E2607 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B953DD4929B51CCF34FC8A607B92A9F;
-			remoteInfo = SunbeamTimerService;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		09B12C9832FD25BF4BC3424E6271AE55 /* SunbeamTimerService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunbeamTimerService.xcconfig; sourceTree = "<group>"; };
-		11D3333705DCF0A46414F1B8E885CB4C /* Pods-SunbeamTimerService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunbeamTimerService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		13A8F89873B67EA972234B84035CCA0E /* Pods-SunbeamTimerService_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunbeamTimerService_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		159E4078D6F9F3820D4A4B120D217C36 /* Pods-SunbeamTimerService_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunbeamTimerService_Example-resources.sh"; sourceTree = "<group>"; };
-		15B826159F1FE0307F4998179917EFD3 /* SunbeamTimerService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunbeamTimerService-umbrella.h"; sourceTree = "<group>"; };
-		192B83795619C4E99CEE80A08B4CBDAE /* Pods-SunbeamTimerService_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunbeamTimerService_Example-frameworks.sh"; sourceTree = "<group>"; };
-		1BA48FA0B2AB213076C0AF40B62C054B /* SunbeamTimerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SunbeamTimerManager.h; sourceTree = "<group>"; };
-		21C327D65AB891850D0BB7C8A1C3D622 /* SunbeamTimerService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunbeamTimerService-prefix.pch"; sourceTree = "<group>"; };
-		27703EC42DC064B0ACA6AED9C53E049D /* SunbeamTimerService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunbeamTimerService-dummy.m"; sourceTree = "<group>"; };
-		2BC05D985504D6FD6283CEB0746A634E /* Pods-SunbeamTimerService_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SunbeamTimerService_Example.modulemap"; sourceTree = "<group>"; };
-		3AAC8A3BAE189AB10DAC8A63DE9D8E9C /* SunbeamTimerService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SunbeamTimerService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41E208488B5043EA16316E3EC5845E40 /* SunbeamTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SunbeamTimer.h; sourceTree = "<group>"; };
-		422D9BBC01A4912EEE4FE610BDB503BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		479FDA578F13644348BF5BBCBDDAA568 /* Pods-SunbeamTimerService_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunbeamTimerService_Tests-resources.sh"; sourceTree = "<group>"; };
-		49C31D67BA58B341D5AFE2E8C8339930 /* SunbeamTimerEventDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SunbeamTimerEventDispatcher.h; sourceTree = "<group>"; };
-		4F7E4423CF0C315061FE50A25222BFED /* Pods-SunbeamTimerService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunbeamTimerService_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5D8F8EF1667671EDDC0D018A031A6FB6 /* SunbeamTimerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SunbeamTimerManager.m; sourceTree = "<group>"; };
-		64C4ACE61B3324561099138192CD083F /* Pods-SunbeamTimerService_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunbeamTimerService_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		6DDE29DC67FE6000B0C8E40A83D086C5 /* Pods-SunbeamTimerService_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunbeamTimerService_Example-umbrella.h"; sourceTree = "<group>"; };
-		71E436C7510020F6C72867B93FCDC150 /* Pods_SunbeamTimerService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunbeamTimerService_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		809380ED1E3EFA009C6820D04B0DBBC4 /* Pods-SunbeamTimerService_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunbeamTimerService_Example-dummy.m"; sourceTree = "<group>"; };
-		86BC1B9C971FE334972B3021C840B646 /* SunbeamTimerService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SunbeamTimerService.modulemap; sourceTree = "<group>"; };
-		8CA974BC6C67BDAC9DD5E7517BF4DAE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1D37D05DCD608B5ADF7B72CAD4752AC /* Pods-SunbeamTimerService_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunbeamTimerService_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A8CB2477E497208F839DD7E6E6120B9B /* SunbeamTimerEventDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SunbeamTimerEventDispatcher.m; sourceTree = "<group>"; };
-		B5D52080AF0D795C21417766DD86915F /* Pods-SunbeamTimerService_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SunbeamTimerService_Tests.modulemap"; sourceTree = "<group>"; };
-		BA6F09873749C747BB7C33D0123BBDC2 /* SunbeamTimerService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SunbeamTimerService.h; sourceTree = "<group>"; };
-		C765FFC64FB90EF970141D807AA9D5CA /* SunbeamTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SunbeamTimer.m; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D49CE95D4AE86D77536C9627A9D962E1 /* Pods-SunbeamTimerService_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunbeamTimerService_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D6C1168521C393D9B4B38F004887B6A2 /* Pods-SunbeamTimerService_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunbeamTimerService_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E8D044D5A8B4EC4B6BD6A492D4A1F5AB /* Pods-SunbeamTimerService_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunbeamTimerService_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F3CAD2A101BA2AE95C2E56BE960C4C37 /* Pods-SunbeamTimerService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunbeamTimerService_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F3CC9A7BC7221529FF95964B39B762E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8E8D4345AE2DED8D6CE0866D6827C5D /* Pods-SunbeamTimerService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunbeamTimerService_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FC6A31068CF2999E2F50201FA869D8BF /* Pods_SunbeamTimerService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunbeamTimerService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDF4E51C3796FF1756D986ADA9C053E6 /* Pods-SunbeamTimerService_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunbeamTimerService_Tests-dummy.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		98EC2EB2553B83487AA19B3E9087C5BA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D6CDBB0B1E742370D53AD8472D2C68B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA0E08FED62FEDF80A4B5C315803BDE0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0ED12406C913FCD33AED773502919ECD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1483D6E569AFB7CDC7CCBEF688FDE26 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30CE8BCC34327450626BF9591F2B8203 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		02E33D5A7E07D0A8A2571F9143E91D15 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AEF413105BF0266830842CD8382C238C /* Pods-SunbeamTimerService_Example */,
-				E99CACCA82090A5C4176A83F5046FC55 /* Pods-SunbeamTimerService_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		06A03DBE62F91A99352AEBEE88366263 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8CA974BC6C67BDAC9DD5E7517BF4DAE0 /* Info.plist */,
-				86BC1B9C971FE334972B3021C840B646 /* SunbeamTimerService.modulemap */,
-				09B12C9832FD25BF4BC3424E6271AE55 /* SunbeamTimerService.xcconfig */,
-				27703EC42DC064B0ACA6AED9C53E049D /* SunbeamTimerService-dummy.m */,
-				21C327D65AB891850D0BB7C8A1C3D622 /* SunbeamTimerService-prefix.pch */,
-				15B826159F1FE0307F4998179917EFD3 /* SunbeamTimerService-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SunbeamTimerService";
-			sourceTree = "<group>";
-		};
-		2969EA35CD363BEC4F1F86F141424898 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				71E436C7510020F6C72867B93FCDC150 /* Pods_SunbeamTimerService_Example.framework */,
-				FC6A31068CF2999E2F50201FA869D8BF /* Pods_SunbeamTimerService_Tests.framework */,
-				3AAC8A3BAE189AB10DAC8A63DE9D8E9C /* SunbeamTimerService.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6FC1B4FB88D423E5579FF0121CD85233 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				41E208488B5043EA16316E3EC5845E40 /* SunbeamTimer.h */,
-				C765FFC64FB90EF970141D807AA9D5CA /* SunbeamTimer.m */,
-				49C31D67BA58B341D5AFE2E8C8339930 /* SunbeamTimerEventDispatcher.h */,
-				A8CB2477E497208F839DD7E6E6120B9B /* SunbeamTimerEventDispatcher.m */,
-				1BA48FA0B2AB213076C0AF40B62C054B /* SunbeamTimerManager.h */,
-				5D8F8EF1667671EDDC0D018A031A6FB6 /* SunbeamTimerManager.m */,
-				BA6F09873749C747BB7C33D0123BBDC2 /* SunbeamTimerService.h */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		7450DED501B57EAB0B58D2190B70B263 /* SunbeamTimerService */ = {
-			isa = PBXGroup;
-			children = (
-				E6954DDFE45F19B0E34DA11DEFE56108 /* SunbeamTimerService */,
-				06A03DBE62F91A99352AEBEE88366263 /* Support Files */,
-			);
-			name = SunbeamTimerService;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				DABC576F1160EFA5FDDBF6B4C000CE17 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				2969EA35CD363BEC4F1F86F141424898 /* Products */,
-				02E33D5A7E07D0A8A2571F9143E91D15 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		AEF413105BF0266830842CD8382C238C /* Pods-SunbeamTimerService_Example */ = {
-			isa = PBXGroup;
-			children = (
-				F3CC9A7BC7221529FF95964B39B762E3 /* Info.plist */,
-				2BC05D985504D6FD6283CEB0746A634E /* Pods-SunbeamTimerService_Example.modulemap */,
-				D6C1168521C393D9B4B38F004887B6A2 /* Pods-SunbeamTimerService_Example-acknowledgements.markdown */,
-				13A8F89873B67EA972234B84035CCA0E /* Pods-SunbeamTimerService_Example-acknowledgements.plist */,
-				809380ED1E3EFA009C6820D04B0DBBC4 /* Pods-SunbeamTimerService_Example-dummy.m */,
-				192B83795619C4E99CEE80A08B4CBDAE /* Pods-SunbeamTimerService_Example-frameworks.sh */,
-				159E4078D6F9F3820D4A4B120D217C36 /* Pods-SunbeamTimerService_Example-resources.sh */,
-				6DDE29DC67FE6000B0C8E40A83D086C5 /* Pods-SunbeamTimerService_Example-umbrella.h */,
-				F3CAD2A101BA2AE95C2E56BE960C4C37 /* Pods-SunbeamTimerService_Example.debug.xcconfig */,
-				4F7E4423CF0C315061FE50A25222BFED /* Pods-SunbeamTimerService_Example.release.xcconfig */,
-			);
-			name = "Pods-SunbeamTimerService_Example";
-			path = "Target Support Files/Pods-SunbeamTimerService_Example";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DABC576F1160EFA5FDDBF6B4C000CE17 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7450DED501B57EAB0B58D2190B70B263 /* SunbeamTimerService */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E6954DDFE45F19B0E34DA11DEFE56108 /* SunbeamTimerService */ = {
-			isa = PBXGroup;
-			children = (
-				6FC1B4FB88D423E5579FF0121CD85233 /* Classes */,
-			);
-			path = SunbeamTimerService;
-			sourceTree = "<group>";
-		};
-		E99CACCA82090A5C4176A83F5046FC55 /* Pods-SunbeamTimerService_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				422D9BBC01A4912EEE4FE610BDB503BB /* Info.plist */,
-				B5D52080AF0D795C21417766DD86915F /* Pods-SunbeamTimerService_Tests.modulemap */,
-				E8D044D5A8B4EC4B6BD6A492D4A1F5AB /* Pods-SunbeamTimerService_Tests-acknowledgements.markdown */,
-				A1D37D05DCD608B5ADF7B72CAD4752AC /* Pods-SunbeamTimerService_Tests-acknowledgements.plist */,
-				FDF4E51C3796FF1756D986ADA9C053E6 /* Pods-SunbeamTimerService_Tests-dummy.m */,
-				64C4ACE61B3324561099138192CD083F /* Pods-SunbeamTimerService_Tests-frameworks.sh */,
-				479FDA578F13644348BF5BBCBDDAA568 /* Pods-SunbeamTimerService_Tests-resources.sh */,
-				D49CE95D4AE86D77536C9627A9D962E1 /* Pods-SunbeamTimerService_Tests-umbrella.h */,
-				11D3333705DCF0A46414F1B8E885CB4C /* Pods-SunbeamTimerService_Tests.debug.xcconfig */,
-				F8E8D4345AE2DED8D6CE0866D6827C5D /* Pods-SunbeamTimerService_Tests.release.xcconfig */,
-			);
-			name = "Pods-SunbeamTimerService_Tests";
-			path = "Target Support Files/Pods-SunbeamTimerService_Tests";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		101EFF798EA9CC5E927763EB6AB4E058 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07BFB475B46F0FDAE32348EB92EF4752 /* SunbeamTimer.h in Headers */,
-				267B694FD400F4A360DED9B11D7D8F43 /* SunbeamTimerEventDispatcher.h in Headers */,
-				F69D5DB82F499C6F74863956A1067705 /* SunbeamTimerManager.h in Headers */,
-				1A77F30A7BFBFF979BA69F980AAAB0EF /* SunbeamTimerService-umbrella.h in Headers */,
-				5BC4525C1FE79B039E78BCDD2EF38E71 /* SunbeamTimerService.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F63764CB0C736CE525168EB9C92FD26 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C0D5B07E5D8E0A09D8E89B8C7455751 /* Pods-SunbeamTimerService_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAC8EE7877C2C6271CA7738DDA364784 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A8C5B0E01EC733EAE4450C09206A84D /* Pods-SunbeamTimerService_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		3B953DD4929B51CCF34FC8A607B92A9F /* SunbeamTimerService */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA2344EC493CC0E00A35C3DBE309A9D3 /* Build configuration list for PBXNativeTarget "SunbeamTimerService" */;
-			buildPhases = (
-				1A17DC3834A7688FCC56D32790221FB0 /* Sources */,
-				98EC2EB2553B83487AA19B3E9087C5BA /* Frameworks */,
-				101EFF798EA9CC5E927763EB6AB4E058 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SunbeamTimerService;
-			productName = SunbeamTimerService;
-			productReference = 3AAC8A3BAE189AB10DAC8A63DE9D8E9C /* SunbeamTimerService.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3C078B7FB8C2CC52224CC348ABA5DD32 /* Pods-SunbeamTimerService_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E4294A31BE17E829E79D4FF64F80BD9B /* Build configuration list for PBXNativeTarget "Pods-SunbeamTimerService_Tests" */;
-			buildPhases = (
-				44763BE71175B05FF204F1402D2B9292 /* Sources */,
-				E1483D6E569AFB7CDC7CCBEF688FDE26 /* Frameworks */,
-				5F63764CB0C736CE525168EB9C92FD26 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-SunbeamTimerService_Tests";
-			productName = "Pods-SunbeamTimerService_Tests";
-			productReference = FC6A31068CF2999E2F50201FA869D8BF /* Pods_SunbeamTimerService_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B475B62803A5148BAFA9E4BBA8C4FF56 /* Pods-SunbeamTimerService_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8DF902AB5A7B33567E32228ECF752147 /* Build configuration list for PBXNativeTarget "Pods-SunbeamTimerService_Example" */;
-			buildPhases = (
-				D843B3F15BB15005E4A9A75FC3B44D98 /* Sources */,
-				DA0E08FED62FEDF80A4B5C315803BDE0 /* Frameworks */,
-				DAC8EE7877C2C6271CA7738DDA364784 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1EC3243E7738AF1AF0FB529AF6FBB28 /* PBXTargetDependency */,
-			);
-			name = "Pods-SunbeamTimerService_Example";
-			productName = "Pods-SunbeamTimerService_Example";
-			productReference = 71E436C7510020F6C72867B93FCDC150 /* Pods_SunbeamTimerService_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2969EA35CD363BEC4F1F86F141424898 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B475B62803A5148BAFA9E4BBA8C4FF56 /* Pods-SunbeamTimerService_Example */,
-				3C078B7FB8C2CC52224CC348ABA5DD32 /* Pods-SunbeamTimerService_Tests */,
-				3B953DD4929B51CCF34FC8A607B92A9F /* SunbeamTimerService */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		1A17DC3834A7688FCC56D32790221FB0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F6A83D2C0F826FB09630A6B600B7616D /* SunbeamTimer.m in Sources */,
-				157B93F638834098AA1A62C87F27F0B7 /* SunbeamTimerEventDispatcher.m in Sources */,
-				5A2585ADDFB44627D295FBFB81C0025C /* SunbeamTimerManager.m in Sources */,
-				11391476294B0035C417453BD68E4D65 /* SunbeamTimerService-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44763BE71175B05FF204F1402D2B9292 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F4B79FA9FE79D8EDB955A011C74B7D /* Pods-SunbeamTimerService_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D843B3F15BB15005E4A9A75FC3B44D98 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				264B1BC51BB7264740B87304680F00F2 /* Pods-SunbeamTimerService_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B1EC3243E7738AF1AF0FB529AF6FBB28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SunbeamTimerService;
-			target = 3B953DD4929B51CCF34FC8A607B92A9F /* SunbeamTimerService */;
-			targetProxy = 1695BD20DC9DCE73A5827CB0091E2607 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2791F02043CDE00AEF4730AF3F40C24D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09B12C9832FD25BF4BC3424E6271AE55 /* SunbeamTimerService.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SunbeamTimerService/SunbeamTimerService-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SunbeamTimerService/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SunbeamTimerService/SunbeamTimerService.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SunbeamTimerService;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5EEE96BE29809CB2CDF416602A06AC30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11D3333705DCF0A46414F1B8E885CB4C /* Pods-SunbeamTimerService_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SunbeamTimerService_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SunbeamTimerService_Tests/Pods-SunbeamTimerService_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SunbeamTimerService_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		776C4DAD0BFC5FFC96E43DDDD572997A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09B12C9832FD25BF4BC3424E6271AE55 /* SunbeamTimerService.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SunbeamTimerService/SunbeamTimerService-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SunbeamTimerService/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SunbeamTimerService/SunbeamTimerService.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SunbeamTimerService;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9D865FD23D6C054A68006579C7943FC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F7E4423CF0C315061FE50A25222BFED /* Pods-SunbeamTimerService_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SunbeamTimerService_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SunbeamTimerService_Example/Pods-SunbeamTimerService_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SunbeamTimerService_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		F41AD3DFEB28E60AFDA4D845AF1F63B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8E8D4345AE2DED8D6CE0866D6827C5D /* Pods-SunbeamTimerService_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SunbeamTimerService_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SunbeamTimerService_Tests/Pods-SunbeamTimerService_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SunbeamTimerService_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FAFD725D93233CF3439311CCD070A44F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3CAD2A101BA2AE95C2E56BE960C4C37 /* Pods-SunbeamTimerService_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SunbeamTimerService_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SunbeamTimerService_Example/Pods-SunbeamTimerService_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SunbeamTimerService_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8DF902AB5A7B33567E32228ECF752147 /* Build configuration list for PBXNativeTarget "Pods-SunbeamTimerService_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAFD725D93233CF3439311CCD070A44F /* Debug */,
-				9D865FD23D6C054A68006579C7943FC9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA2344EC493CC0E00A35C3DBE309A9D3 /* Build configuration list for PBXNativeTarget "SunbeamTimerService" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2791F02043CDE00AEF4730AF3F40C24D /* Debug */,
-				776C4DAD0BFC5FFC96E43DDDD572997A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E4294A31BE17E829E79D4FF64F80BD9B /* Build configuration list for PBXNativeTarget "Pods-SunbeamTimerService_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EEE96BE29809CB2CDF416602A06AC30 /* Debug */,
-				F41AD3DFEB28E60AFDA4D845AF1F63B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>00C4F6BF6A4B4E53AAD3B89C5868209C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MSWeakTimer-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0256EBE92C4FD907502539FD98E6F33F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D35C622F141403CA982D0F1C5F9DC1D3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>409EE68EA1EC1B1D3F5FA969754BBEEB</string>
+				<string>3287007C5FD40F8E3CECF6C3DE945EB8</string>
+				<string>2111640948C7095A9162EBEAFB6517C4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>DD070ED783B8A3D1B1374BCDB3E879B3</string>
+				<string>DFB1212A8306ED31E892AE0D749618FA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-SunbeamTimerService_Example</string>
+			<key>productName</key>
+			<string>Pods-SunbeamTimerService_Example</string>
+			<key>productReference</key>
+			<string>EDD238864ED29653365DFBA5798C8584</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>026AC585D91FB9E663D6537BD58C9198</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>MSWeakTimer.framework</string>
+			<key>path</key>
+			<string>MSWeakTimer.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>02E33D5A7E07D0A8A2571F9143E91D15</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AEF413105BF0266830842CD8382C238C</string>
+				<string>E99CACCA82090A5C4176A83F5046FC55</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06A03DBE62F91A99352AEBEE88366263</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8CA974BC6C67BDAC9DD5E7517BF4DAE0</string>
+				<string>86BC1B9C971FE334972B3021C840B646</string>
+				<string>09B12C9832FD25BF4BC3424E6271AE55</string>
+				<string>27703EC42DC064B0ACA6AED9C53E049D</string>
+				<string>21C327D65AB891850D0BB7C8A1C3D622</string>
+				<string>15B826159F1FE0307F4998179917EFD3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/SunbeamTimerService</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09B12C9832FD25BF4BC3424E6271AE55</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SunbeamTimerService.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0ACDCBCB0B6796575F46FFA2F5410C6B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_RELEASE=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>11D3333705DCF0A46414F1B8E885CB4C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>13A8F89873B67EA972234B84035CCA0E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>140993D92FBBA460FF655753D8DDF3F4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E34CC80E96C970E51BABB47F38817FDD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8D32794CC1D5BB7EE5A7EC8B3AA38B0A</string>
+				<string>331FB4E92ED45E65517D9E1E63648DDA</string>
+				<string>C2FB1E3798518D9B466E3D431DB2C873</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>D1CE3D3FD95585DC86C81A5940F04958</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SunbeamTimerService</string>
+			<key>productName</key>
+			<string>SunbeamTimerService</string>
+			<key>productReference</key>
+			<string>7607DBA27232B7280BA7F6B375144BA8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>159E4078D6F9F3820D4A4B120D217C36</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15B826159F1FE0307F4998179917EFD3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SunbeamTimerService-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>192B83795619C4E99CEE80A08B4CBDAE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1BA48FA0B2AB213076C0AF40B62C054B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SunbeamTimerManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1CA4E3B7BAEDD0B1A72C5732F98FB020</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8B31E2C78EDB3C399B0CE39E5DA016A1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2111640948C7095A9162EBEAFB6517C4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6F2EC1B233FD8535B7ABEC877B77F120</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>21C327D65AB891850D0BB7C8A1C3D622</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SunbeamTimerService-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2572CDDE3E2F40D7A303EE25019C4837</key>
+		<dict>
+			<key>fileRef</key>
+			<string>458DBA5616912D170F7C2285C7A66620</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27703EC42DC064B0ACA6AED9C53E049D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SunbeamTimerService-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2B72F688E8DA7DE2C8E2A1611A5E39F8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F3CAD2A101BA2AE95C2E56BE960C4C37</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SunbeamTimerService_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SunbeamTimerService_Example/Pods-SunbeamTimerService_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_SunbeamTimerService_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2BC05D985504D6FD6283CEB0746A634E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C19B56189F5AFCA5C3D385C4DBCBBD9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_SunbeamTimerService_Tests.framework</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2C5CAD6D10817C30D71D5190F424C6C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>00C4F6BF6A4B4E53AAD3B89C5868209C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D3E3D092A3FF7311A98E44BBA36FFD12</string>
+				<string>0ACDCBCB0B6796575F46FFA2F5410C6B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2F84BF1057F539A639A7C276BBC69A5A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BA6F09873749C747BB7C33D0123BBDC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>30CE8BCC34327450626BF9591F2B8203</key>
+		<dict>
+			<key>fileRef</key>
+			<string>458DBA5616912D170F7C2285C7A66620</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>31E4F8130A6E229729167615C61C496E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9F75927904D7F696FC819B3F54DB16C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3287007C5FD40F8E3CECF6C3DE945EB8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5FCC8A1492CE62B6E7AA1F4AF549571E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>331FB4E92ED45E65517D9E1E63648DDA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2572CDDE3E2F40D7A303EE25019C4837</string>
+				<string>6CB97DBF6D9443DF08FEC33F3820BB88</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35636E127467F8C6F6A9307752FF3F56</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27703EC42DC064B0ACA6AED9C53E049D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3C078B7FB8C2CC52224CC348ABA5DD32</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E4294A31BE17E829E79D4FF64F80BD9B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>44763BE71175B05FF204F1402D2B9292</string>
+				<string>E1483D6E569AFB7CDC7CCBEF688FDE26</string>
+				<string>5F63764CB0C736CE525168EB9C92FD26</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-SunbeamTimerService_Tests</string>
+			<key>productName</key>
+			<string>Pods-SunbeamTimerService_Tests</string>
+			<key>productReference</key>
+			<string>2C19B56189F5AFCA5C3D385C4DBCBBD9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>3D06C90E62EFCEE873F058269533F379</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>09B12C9832FD25BF4BC3424E6271AE55</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SunbeamTimerService/SunbeamTimerService-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SunbeamTimerService/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SunbeamTimerService/SunbeamTimerService.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SunbeamTimerService</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>403AB538AE7AC61C68335043C1E28883</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>5C67015EA0FC7CCE35A09B4A1517E78E</string>
+			<key>remoteInfo</key>
+			<string>MSWeakTimer</string>
+		</dict>
+		<key>409EE68EA1EC1B1D3F5FA969754BBEEB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A193ECCBCC14CF8A89D3FDA08F1EE230</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>410ACE37CB315CA77FB199E76F515AD5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C765FFC64FB90EF970141D807AA9D5CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>41E208488B5043EA16316E3EC5845E40</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SunbeamTimer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>422D9BBC01A4912EEE4FE610BDB503BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44763BE71175B05FF204F1402D2B9292</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F4B79FA9FE79D8EDB955A011C74B7D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>458DBA5616912D170F7C2285C7A66620</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>479FDA578F13644348BF5BBCBDDAA568</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>49C31D67BA58B341D5AFE2E8C8339930</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SunbeamTimerEventDispatcher.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4ED77D0312D156729EC308E7171E52E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8CB2477E497208F839DD7E6E6120B9B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4F7E4423CF0C315061FE50A25222BFED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4FEF5104A91FA0EE98FA067190E4A273</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MSWeakTimer.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5C67015EA0FC7CCE35A09B4A1517E78E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B407673817C618B2F0F3C6B151FD68B9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7F6D60C7C6F8E86E08C36D502F9E68B0</string>
+				<string>1CA4E3B7BAEDD0B1A72C5732F98FB020</string>
+				<string>BAA32C8642F005207A5A47B77C322114</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MSWeakTimer</string>
+			<key>productName</key>
+			<string>MSWeakTimer</string>
+			<key>productReference</key>
+			<string>026AC585D91FB9E663D6537BD58C9198</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>5D8F8EF1667671EDDC0D018A031A6FB6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SunbeamTimerManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5DBE7975F5AE2C2C51D240D6C75102F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1BA48FA0B2AB213076C0AF40B62C054B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5EEE96BE29809CB2CDF416602A06AC30</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>11D3333705DCF0A46414F1B8E885CB4C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SunbeamTimerService_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SunbeamTimerService_Tests/Pods-SunbeamTimerService_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_SunbeamTimerService_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5F63764CB0C736CE525168EB9C92FD26</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8C0D5B07E5D8E0A09D8E89B8C7455751</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5FCC8A1492CE62B6E7AA1F4AF549571E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>458DBA5616912D170F7C2285C7A66620</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6068CCA9F9B7A528531715C330BCB373</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F729AA329A2853EC4EBF570EBF26D9E6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>612CF88B7C47B387B571A342F31099AE</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>621FE20149E6EE90F40718FA0AE82FBD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/MSWeakTimer/MSWeakTimer-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/MSWeakTimer/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/MSWeakTimer/MSWeakTimer.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>MSWeakTimer</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>621FE20149E6EE90F40718FA0AE82FBD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>MSWeakTimer.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>64C4ACE61B3324561099138192CD083F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>681D1F67BD03CA91652EFB34E319476E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>15B826159F1FE0307F4998179917EFD3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6AAAC509F52F5E70A53AFE3B676CA2E1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>09B12C9832FD25BF4BC3424E6271AE55</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SunbeamTimerService/SunbeamTimerService-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SunbeamTimerService/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SunbeamTimerService/SunbeamTimerService.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SunbeamTimerService</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6C705C5C9FA4D29AE3903FBD987BE83C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C44A85E9BDFF4D5403AC24E92FE3FA19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6CB97DBF6D9443DF08FEC33F3820BB88</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4FEF5104A91FA0EE98FA067190E4A273</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DDE29DC67FE6000B0C8E40A83D086C5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F2EC1B233FD8535B7ABEC877B77F120</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DDE29DC67FE6000B0C8E40A83D086C5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6FC1B4FB88D423E5579FF0121CD85233</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>41E208488B5043EA16316E3EC5845E40</string>
+				<string>C765FFC64FB90EF970141D807AA9D5CA</string>
+				<string>49C31D67BA58B341D5AFE2E8C8339930</string>
+				<string>A8CB2477E497208F839DD7E6E6120B9B</string>
+				<string>1BA48FA0B2AB213076C0AF40B62C054B</string>
+				<string>5D8F8EF1667671EDDC0D018A031A6FB6</string>
+				<string>BA6F09873749C747BB7C33D0123BBDC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>70F4E9D48E7E446C64C219770F77F46D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>621FE20149E6EE90F40718FA0AE82FBD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/MSWeakTimer/MSWeakTimer-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/MSWeakTimer/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/MSWeakTimer/MSWeakTimer.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>MSWeakTimer</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7450DED501B57EAB0B58D2190B70B263</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E6954DDFE45F19B0E34DA11DEFE56108</string>
+				<string>06A03DBE62F91A99352AEBEE88366263</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SunbeamTimerService</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>755721C2BB89F143986154696538F656</key>
+		<dict>
+			<key>fileRef</key>
+			<string>41E208488B5043EA16316E3EC5845E40</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7607DBA27232B7280BA7F6B375144BA8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SunbeamTimerService.framework</string>
+			<key>path</key>
+			<string>SunbeamTimerService.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>79F6D96BE4E9C348E6986F80CF20873C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5D8F8EF1667671EDDC0D018A031A6FB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79FB41FF2CF4FF1C0EDD9B69B16A1B61</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>5C67015EA0FC7CCE35A09B4A1517E78E</string>
+			<key>remoteInfo</key>
+			<string>MSWeakTimer</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
+				<string>DABC576F1160EFA5FDDBF6B4C000CE17</string>
+				<string>F5181A7907C7D8D4163697F12FAF5AFF</string>
+				<string>6068CCA9F9B7A528531715C330BCB373</string>
+				<string>923E877A73C296FDFF6EA0913C18F345</string>
+				<string>02E33D5A7E07D0A8A2571F9143E91D15</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DF5F1DC59BE8005908919C7E222255A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F6D60C7C6F8E86E08C36D502F9E68B0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6C705C5C9FA4D29AE3903FBD987BE83C</string>
+				<string>E7251CB9B731D628E85EFE05A5851B82</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>809380ED1E3EFA009C6820D04B0DBBC4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>830E049CA1653475BF690712ACE0E866</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MSWeakTimer-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86BC1B9C971FE334972B3021C840B646</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SunbeamTimerService.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F4B79FA9FE79D8EDB955A011C74B7D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDF4E51C3796FF1756D986ADA9C053E6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8B31E2C78EDB3C399B0CE39E5DA016A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>458DBA5616912D170F7C2285C7A66620</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8C0D5B07E5D8E0A09D8E89B8C7455751</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D49CE95D4AE86D77536C9627A9D962E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8CA974BC6C67BDAC9DD5E7517BF4DAE0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D32794CC1D5BB7EE5A7EC8B3AA38B0A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>410ACE37CB315CA77FB199E76F515AD5</string>
+				<string>4ED77D0312D156729EC308E7171E52E1</string>
+				<string>79F6D96BE4E9C348E6986F80CF20873C</string>
+				<string>35636E127467F8C6F6A9307752FF3F56</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>923E877A73C296FDFF6EA0913C18F345</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>026AC585D91FB9E663D6537BD58C9198</string>
+				<string>EDD238864ED29653365DFBA5798C8584</string>
+				<string>2C19B56189F5AFCA5C3D385C4DBCBBD9</string>
+				<string>7607DBA27232B7280BA7F6B375144BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>text.script.ruby</string>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>97D4BFAB5C0E4FB3D87545713AE85DC9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MSWeakTimer.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B837354CB43D9FFB8E03F564E60F0D2</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>140993D92FBBA460FF655753D8DDF3F4</string>
+			<key>remoteInfo</key>
+			<string>SunbeamTimerService</string>
+		</dict>
+		<key>9F75927904D7F696FC819B3F54DB16C9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MSWeakTimer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A193ECCBCC14CF8A89D3FDA08F1EE230</key>
+		<dict>
+			<key>fileRef</key>
+			<string>809380ED1E3EFA009C6820D04B0DBBC4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A1D37D05DCD608B5ADF7B72CAD4752AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8CB2477E497208F839DD7E6E6120B9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SunbeamTimerEventDispatcher.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AEF413105BF0266830842CD8382C238C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3CC9A7BC7221529FF95964B39B762E3</string>
+				<string>2BC05D985504D6FD6283CEB0746A634E</string>
+				<string>D6C1168521C393D9B4B38F004887B6A2</string>
+				<string>13A8F89873B67EA972234B84035CCA0E</string>
+				<string>809380ED1E3EFA009C6820D04B0DBBC4</string>
+				<string>192B83795619C4E99CEE80A08B4CBDAE</string>
+				<string>159E4078D6F9F3820D4A4B120D217C36</string>
+				<string>6DDE29DC67FE6000B0C8E40A83D086C5</string>
+				<string>F3CAD2A101BA2AE95C2E56BE960C4C37</string>
+				<string>4F7E4423CF0C315061FE50A25222BFED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-SunbeamTimerService_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-SunbeamTimerService_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2A71E4E7CA8AC7EE7AF2176FC1274F0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4F7E4423CF0C315061FE50A25222BFED</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SunbeamTimerService_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SunbeamTimerService_Example/Pods-SunbeamTimerService_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_SunbeamTimerService_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B407673817C618B2F0F3C6B151FD68B9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>612CF88B7C47B387B571A342F31099AE</string>
+				<string>70F4E9D48E7E446C64C219770F77F46D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B5D52080AF0D795C21417766DD86915F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6F09873749C747BB7C33D0123BBDC2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SunbeamTimerService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BAA32C8642F005207A5A47B77C322114</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2C5CAD6D10817C30D71D5190F424C6C1</string>
+				<string>31E4F8130A6E229729167615C61C496E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C2FB1E3798518D9B466E3D431DB2C873</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>755721C2BB89F143986154696538F656</string>
+				<string>F32B7AA8F10CA7EAD3891E3670B6AE0B</string>
+				<string>5DBE7975F5AE2C2C51D240D6C75102F6</string>
+				<string>681D1F67BD03CA91652EFB34E319476E</string>
+				<string>2F84BF1057F539A639A7C276BBC69A5A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C44A85E9BDFF4D5403AC24E92FE3FA19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MSWeakTimer-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C765FFC64FB90EF970141D807AA9D5CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SunbeamTimer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1CE3D3FD95585DC86C81A5940F04958</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>MSWeakTimer</string>
+			<key>target</key>
+			<string>5C67015EA0FC7CCE35A09B4A1517E78E</string>
+			<key>targetProxy</key>
+			<string>79FB41FF2CF4FF1C0EDD9B69B16A1B61</string>
+		</dict>
+		<key>D35C622F141403CA982D0F1C5F9DC1D3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2B72F688E8DA7DE2C8E2A1611A5E39F8</string>
+				<string>B2A71E4E7CA8AC7EE7AF2176FC1274F0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D3E3D092A3FF7311A98E44BBA36FFD12</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_DEBUG=1</string>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>923E877A73C296FDFF6EA0913C18F345</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>5C67015EA0FC7CCE35A09B4A1517E78E</string>
+				<string>0256EBE92C4FD907502539FD98E6F33F</string>
+				<string>3C078B7FB8C2CC52224CC348ABA5DD32</string>
+				<string>140993D92FBBA460FF655753D8DDF3F4</string>
+			</array>
+		</dict>
+		<key>D49CE95D4AE86D77536C9627A9D962E1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D6C1168521C393D9B4B38F004887B6A2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DABC576F1160EFA5FDDBF6B4C000CE17</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7450DED501B57EAB0B58D2190B70B263</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DD070ED783B8A3D1B1374BCDB3E879B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>MSWeakTimer</string>
+			<key>target</key>
+			<string>5C67015EA0FC7CCE35A09B4A1517E78E</string>
+			<key>targetProxy</key>
+			<string>403AB538AE7AC61C68335043C1E28883</string>
+		</dict>
+		<key>DECD003FADBAF3544E297DB7ED31B600</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MSWeakTimer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFB1212A8306ED31E892AE0D749618FA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SunbeamTimerService</string>
+			<key>target</key>
+			<string>140993D92FBBA460FF655753D8DDF3F4</string>
+			<key>targetProxy</key>
+			<string>9B837354CB43D9FFB8E03F564E60F0D2</string>
+		</dict>
+		<key>E1483D6E569AFB7CDC7CCBEF688FDE26</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>30CE8BCC34327450626BF9591F2B8203</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E34CC80E96C970E51BABB47F38817FDD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3D06C90E62EFCEE873F058269533F379</string>
+				<string>6AAAC509F52F5E70A53AFE3B676CA2E1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E4294A31BE17E829E79D4FF64F80BD9B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5EEE96BE29809CB2CDF416602A06AC30</string>
+				<string>F41AD3DFEB28E60AFDA4D845AF1F63B3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E6954DDFE45F19B0E34DA11DEFE56108</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FC1B4FB88D423E5579FF0121CD85233</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SunbeamTimerService</string>
+			<key>path</key>
+			<string>SunbeamTimerService</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E7251CB9B731D628E85EFE05A5851B82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DECD003FADBAF3544E297DB7ED31B600</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>E8D044D5A8B4EC4B6BD6A492D4A1F5AB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E99CACCA82090A5C4176A83F5046FC55</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>422D9BBC01A4912EEE4FE610BDB503BB</string>
+				<string>B5D52080AF0D795C21417766DD86915F</string>
+				<string>E8D044D5A8B4EC4B6BD6A492D4A1F5AB</string>
+				<string>A1D37D05DCD608B5ADF7B72CAD4752AC</string>
+				<string>FDF4E51C3796FF1756D986ADA9C053E6</string>
+				<string>64C4ACE61B3324561099138192CD083F</string>
+				<string>479FDA578F13644348BF5BBCBDDAA568</string>
+				<string>D49CE95D4AE86D77536C9627A9D962E1</string>
+				<string>11D3333705DCF0A46414F1B8E885CB4C</string>
+				<string>F8E8D4345AE2DED8D6CE0866D6827C5D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-SunbeamTimerService_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-SunbeamTimerService_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EDD238864ED29653365DFBA5798C8584</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_SunbeamTimerService_Example.framework</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F32B7AA8F10CA7EAD3891E3670B6AE0B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>49C31D67BA58B341D5AFE2E8C8339930</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F3CAD2A101BA2AE95C2E56BE960C4C37</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3CC9A7BC7221529FF95964B39B762E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F41AD3DFEB28E60AFDA4D845AF1F63B3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F8E8D4345AE2DED8D6CE0866D6827C5D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SunbeamTimerService_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SunbeamTimerService_Tests/Pods-SunbeamTimerService_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_SunbeamTimerService_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F5181A7907C7D8D4163697F12FAF5AFF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4FEF5104A91FA0EE98FA067190E4A273</string>
+				<string>F6BB7E6AC97CB4457BF1ACC1F4C77585</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6BB7E6AC97CB4457BF1ACC1F4C77585</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>458DBA5616912D170F7C2285C7A66620</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F729AA329A2853EC4EBF570EBF26D9E6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9F75927904D7F696FC819B3F54DB16C9</string>
+				<string>DECD003FADBAF3544E297DB7ED31B600</string>
+				<string>FD9F3B69ADE446D3527C686F09510F28</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MSWeakTimer</string>
+			<key>path</key>
+			<string>MSWeakTimer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F8E8D4345AE2DED8D6CE0866D6827C5D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD9F3B69ADE446D3527C686F09510F28</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7DF5F1DC59BE8005908919C7E222255A</string>
+				<string>97D4BFAB5C0E4FB3D87545713AE85DC9</string>
+				<string>621FE20149E6EE90F40718FA0AE82FBD</string>
+				<string>C44A85E9BDFF4D5403AC24E92FE3FA19</string>
+				<string>830E049CA1653475BF690712ACE0E866</string>
+				<string>00C4F6BF6A4B4E53AAD3B89C5868209C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/MSWeakTimer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDF4E51C3796FF1756D986ADA9C053E6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-SunbeamTimerService_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

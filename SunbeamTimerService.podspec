@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SunbeamTimerService'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'A simple NSTimer manager for develop.'
 
   s.homepage         = 'https://github.com/sunbeamChen/SunbeamTimerService'
@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'SunbeamTimerService/Classes/SunbeamTimerService.h','SunbeamTimerService/Classes/SunbeamTimerManager.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MSWeakTimer'
 end

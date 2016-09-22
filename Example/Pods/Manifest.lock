@@ -1,5 +1,7 @@
 PODS:
-  - SunbeamTimerService (0.1.6)
+  - MSWeakTimer (1.1.0)
+  - SunbeamTimerService (0.1.7):
+    - MSWeakTimer
 
 DEPENDENCIES:
   - SunbeamTimerService (from `../`)
@@ -9,7 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SunbeamTimerService: 1c71501d3eddff124a85bc9ee0f53fbba405bb89
+  MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
+  SunbeamTimerService: b0fbd3769dc09b2561931862e24156f275b08ce1
 
 PODFILE CHECKSUM: e2cefc6487d11e8d1c0e62de5c48ac8d3ede0ab0
 

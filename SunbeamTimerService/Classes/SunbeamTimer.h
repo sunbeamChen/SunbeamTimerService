@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MSWeakTimer/MSWeakTimer.h>
 
 @interface SunbeamTimer : NSObject
 
@@ -26,6 +27,6 @@
 @property (nonatomic, assign) BOOL repeats;
 
 // NSTimer
-@property (nonatomic, strong) NSTimer* timer;
+@property (nonatomic, strong) MSWeakTimer* timer;
 
 @end

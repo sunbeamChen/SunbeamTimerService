@@ -39,6 +39,7 @@
         NSLog(@"10s执行");
     } else if ([@"20s" isEqualToString:identifier]) {
         NSLog(@"20s执行");
+        [[SunbeamTimerManager sharedSunbeamTimerManager] clearAllSunbeamTimer];
     }
 }
 
