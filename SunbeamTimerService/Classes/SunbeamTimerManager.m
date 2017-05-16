@@ -18,6 +18,9 @@
 
 @interface SunbeamTimerManager() <SunbeamTimerEventListener>
 
+// SunbeamTimerExecuteDelegate list [id<SunbeamTimerExecuteDelegate>]
+@property (nonatomic, strong, readwrite) NSMutableArray* delegates;
+
 // STimer list {"STimer identifier":"STimer"}
 @property (nonatomic, strong, readwrite) NSMutableDictionary* sunbeamtimerList;
 
@@ -71,6 +74,21 @@
 - (void)dealloc
 {
     [[SunbeamTimerEventDispatcher sharedSunbeamTimerEventDispatcher] removeListener:self];
+}
+
+// 添加代理
+- (void) addTimerExecuteDelegate:(id<SunbeamTimerExecuteDelegate>) delegate
+{
+    if (delegate == nil) {
+        return;
+    }
+    [self.delegates addObject:delegate];
+}
+
+// 移除代理
+- (void) removeTimerExecuteDelegate:(id<SunbeamTimerExecuteDelegate>) delegate
+{
+    [self.delegates removeObject:delegate];
 }
 
 // 添加STimer
@@ -139,8 +157,10 @@
         MSWeakTimer* tempTimer = timer;
         NSString* identifier = [tempTimer.userInfo objectForKey:NSTIMER_USERINFO_IDENTIFIER_KEY];
         NSDictionary* userInfo = [tempTimer.userInfo objectForKey:NSTIMER_USERINFO_SELF_KEY];
-        if ([self.delegate respondsToSelector:@selector(SunbeamTimerExecute:userInfo:)]) {
-            [self.delegate SunbeamTimerExecute:identifier userInfo:userInfo];
+        for (id<SunbeamTimerExecuteDelegate> delegate in self.delegates) {
+            if ([delegate respondsToSelector:@selector(SunbeamTimerExecute:userInfo:)]) {
+                [delegate SunbeamTimerExecute:identifier userInfo:userInfo];
+            }
         }
         // 定时器执行后移除
         SunbeamTimer* stimer = [self.sunbeamtimerList objectForKey:identifier];
@@ -151,14 +171,15 @@
 }
 
 #pragma mark - cache update
-#pragma mark - cache update
 - (void)sunbeamTimerAdd:(SunbeamTimer *)stimer params:(NSMutableDictionary *)params
 {
     @synchronized (self.addSTimerToken) {
         [self.sunbeamtimerList setObject:stimer forKey:stimer.identifier];
         NSLog(@"定时器添加：%@", stimer);
-        if ([self.delegate respondsToSelector:@selector(SunbeamTimerAdded:)]) {
-            [self.delegate SunbeamTimerAdded:stimer.identifier];
+        for (id<SunbeamTimerExecuteDelegate> delegate in self.delegates) {
+            if ([delegate respondsToSelector:@selector(SunbeamTimerAdded:)]) {
+                [delegate SunbeamTimerAdded:stimer.identifier];
+            }
         }
     }
 }
@@ -168,8 +189,10 @@
     @synchronized (self.destroySTimerToken) {
         [self.sunbeamtimerList removeObjectForKey:stimer.identifier];
         NSLog(@"定时器销毁：%@", stimer);
-        if ([self.delegate respondsToSelector:@selector(SunbeamTimerDestroy:)]) {
-            [self.delegate SunbeamTimerDestroy:stimer.identifier];
+        for (id<SunbeamTimerExecuteDelegate> delegate in self.delegates) {
+            if ([delegate respondsToSelector:@selector(SunbeamTimerDestroy:)]) {
+                [delegate SunbeamTimerDestroy:stimer.identifier];
+            }
         }
     }
 }
@@ -182,13 +205,24 @@
         for (SunbeamTimer* stimer in [tempSTimerList allValues]) {
             [self destroySunbeamTimer:stimer.identifier];
         }
-        if ([self.delegate respondsToSelector:@selector(SunbeamTimerClear:)]) {
-            [self.delegate SunbeamTimerClear:tempSTimerList];
+        for (id<SunbeamTimerExecuteDelegate> delegate in self.delegates) {
+            if ([delegate respondsToSelector:@selector(SunbeamTimerClear:)]) {
+                [delegate SunbeamTimerClear:tempSTimerList];
+            }
         }
     }
 }
 
 #pragma mark - timer cache init
+- (NSMutableArray *)delegates
+{
+    if (_delegates == nil) {
+        _delegates = [[NSMutableArray alloc] init];
+    }
+    
+    return _delegates;
+}
+
 - (NSMutableDictionary *)sunbeamtimerList
 {
     if (_sunbeamtimerList == nil) {

@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
 	
-    [SunbeamTimerManager sharedSunbeamTimerManager].delegate = self;
+    [[SunbeamTimerManager sharedSunbeamTimerManager] addTimerExecuteDelegate:self];
     
     [[SunbeamTimerManager sharedSunbeamTimerManager] addSunbeamTimer:@"5s" name:@"5s" desc:@"5s timer" timeInterval:5.0 userInfo:nil repeats:YES];
     

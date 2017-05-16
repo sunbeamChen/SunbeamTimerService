@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define SUNBEAM_TIMER_SERVICE_VERSION @"0.1.8"
+#define SUNBEAM_TIMER_SERVICE_VERSION @"0.1.9"
 
 @protocol SunbeamTimerExecuteDelegate <NSObject>
 
@@ -32,10 +32,17 @@
 
 + (SunbeamTimerManager *) sharedSunbeamTimerManager;
 
-@property (nonatomic, weak) id<SunbeamTimerExecuteDelegate> delegate;
+// SunbeamTimerExecuteDelegate list [id<SunbeamTimerExecuteDelegate>]
+@property (nonatomic, strong, readonly) NSMutableArray* delegates;
 
 // STimer list {"STimer identifier":"STimer"}
 @property (nonatomic, strong, readonly) NSMutableDictionary* sunbeamtimerList;
+
+// 添加代理
+- (void) addTimerExecuteDelegate:(id<SunbeamTimerExecuteDelegate>) delegate;
+
+// 移除代理
+- (void) removeTimerExecuteDelegate:(id<SunbeamTimerExecuteDelegate>) delegate;
 
 // 添加STimer
 - (void) addSunbeamTimer:(NSString *) identifier name:(NSString *) name desc:(NSString *) desc timeInterval:(NSTimeInterval) timeInterval userInfo:(NSDictionary *) userInfo repeats:(BOOL) repeats;
