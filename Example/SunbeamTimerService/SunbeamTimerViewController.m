@@ -34,11 +34,10 @@
 - (void) SunbeamTimerExecute:(NSString *) identifier userInfo:(NSDictionary *) userInfo
 {
     if ([@"5s" isEqualToString:identifier]) {
-        NSLog(@"5s执行");
+        
     } else if ([@"10s" isEqualToString:identifier]) {
-        NSLog(@"10s执行");
+        
     } else if ([@"20s" isEqualToString:identifier]) {
-        NSLog(@"20s执行");
         [[SunbeamTimerManager sharedSunbeamTimerManager] clearAllSunbeamTimer];
     }
 }

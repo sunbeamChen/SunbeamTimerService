@@ -1,7 +1,16 @@
 PODS:
+  - CocoaLumberjack (3.2.0):
+    - CocoaLumberjack/Default (= 3.2.0)
+    - CocoaLumberjack/Extensions (= 3.2.0)
+  - CocoaLumberjack/Default (3.2.0)
+  - CocoaLumberjack/Extensions (3.2.0):
+    - CocoaLumberjack/Default
   - MSWeakTimer (1.1.0)
-  - SunbeamTimerService (0.1.9):
+  - SunbeamLogService (0.1.12):
+    - CocoaLumberjack
+  - SunbeamTimerService (0.1.10):
     - MSWeakTimer
+    - SunbeamLogService
 
 DEPENDENCIES:
   - SunbeamTimerService (from `../`)
@@ -11,8 +20,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
   MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
-  SunbeamTimerService: e6a24a363706f4a33715c8c81de1dec90043ce84
+  SunbeamLogService: 3f50edcf8f1e6789adf516fe7bdd6f14c6afdc91
+  SunbeamTimerService: c58a59cfd8543743f0e2aae27cfab2f084ac7288
 
 PODFILE CHECKSUM: e2cefc6487d11e8d1c0e62de5c48ac8d3ede0ab0
 

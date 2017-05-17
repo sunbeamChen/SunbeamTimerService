@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define SUNBEAM_TIMER_SERVICE_VERSION @"0.1.9"
+#define SUNBEAM_TIMER_SERVICE_VERSION @"0.1.10"
 
 @protocol SunbeamTimerExecuteDelegate <NSObject>
 

@@ -12,6 +12,8 @@
 
 #import <MSWeakTimer/MSWeakTimer.h>
 
+#import <SunbeamLogService/SunbeamLogService.h>
+
 #define NSTIMER_USERINFO_IDENTIFIER_KEY @"userInfo_identifier"
 
 #define NSTIMER_USERINFO_SELF_KEY @"userInfo_self"
@@ -50,6 +52,7 @@
     if (self = [super init]) {
         [self initEventListener];
         [self initSTimerToken];
+        [SLog initSLogService];
     }
     
     return self;
@@ -62,7 +65,9 @@
     self.destroySTimerToken = @"destroy STimer token";
     self.clearSTimerToken = @"clear STimer token";
     self.executeSTimerToken = @"execute STimer token";
-    NSLog(@"Sunbeam Timer Service %@", SUNBEAM_TIMER_SERVICE_VERSION);
+#ifdef DEBUG
+    NSLog(@"\n======================\nSunbeam Timer Service version is %@\n======================", SUNBEAM_TIMER_SERVICE_VERSION);
+#endif
 }
 
 //初始化EventListener
@@ -157,9 +162,12 @@
         MSWeakTimer* tempTimer = timer;
         NSString* identifier = [tempTimer.userInfo objectForKey:NSTIMER_USERINFO_IDENTIFIER_KEY];
         NSDictionary* userInfo = [tempTimer.userInfo objectForKey:NSTIMER_USERINFO_SELF_KEY];
+        SLogDebug(@"定时器执行：[%@][%@]", identifier, userInfo);
         for (id<SunbeamTimerExecuteDelegate> delegate in self.delegates) {
             if ([delegate respondsToSelector:@selector(SunbeamTimerExecute:userInfo:)]) {
                 [delegate SunbeamTimerExecute:identifier userInfo:userInfo];
+            } else {
+                SLogWarn(@"指定timer代理回调方法SunbeamTimerExecute:userInfo:未实现[%@]", delegate);
             }
         }
         // 定时器执行后移除
@@ -175,7 +183,7 @@
 {
     @synchronized (self.addSTimerToken) {
         [self.sunbeamtimerList setObject:stimer forKey:stimer.identifier];
-        NSLog(@"定时器添加：%@", stimer);
+        SLogDebug(@"定时器添加：[%@][%@][%@][%d]", stimer.identifier, stimer.name, stimer.desc, stimer.repeats);
         for (id<SunbeamTimerExecuteDelegate> delegate in self.delegates) {
             if ([delegate respondsToSelector:@selector(SunbeamTimerAdded:)]) {
                 [delegate SunbeamTimerAdded:stimer.identifier];
@@ -188,7 +196,7 @@
 {
     @synchronized (self.destroySTimerToken) {
         [self.sunbeamtimerList removeObjectForKey:stimer.identifier];
-        NSLog(@"定时器销毁：%@", stimer);
+        SLogDebug(@"定时器销毁：[%@][%@][%@][%d]", stimer.identifier, stimer.desc, stimer.desc, stimer.repeats);
         for (id<SunbeamTimerExecuteDelegate> delegate in self.delegates) {
             if ([delegate respondsToSelector:@selector(SunbeamTimerDestroy:)]) {
                 [delegate SunbeamTimerDestroy:stimer.identifier];
@@ -201,8 +209,8 @@
 {
     @synchronized (self.clearSTimerToken) {
         NSMutableDictionary* tempSTimerList = self.sunbeamtimerList;
-        NSLog(@"定时器清空：%@", self.sunbeamtimerList);
         for (SunbeamTimer* stimer in [tempSTimerList allValues]) {
+            SLogDebug(@"清空指定定时器：[%@][%@][%@][%d]", stimer.identifier, stimer.desc, stimer.desc, stimer.repeats);
             [self destroySunbeamTimer:stimer.identifier];
         }
         for (id<SunbeamTimerExecuteDelegate> delegate in self.delegates) {
