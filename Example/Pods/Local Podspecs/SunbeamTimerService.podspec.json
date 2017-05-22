@@ -1,6 +1,6 @@
 {
   "name": "SunbeamTimerService",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "summary": "A simple NSTimer manager for develop.",
   "homepage": "https://github.com/sunbeamChen/SunbeamTimerService",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/sunbeamChen/SunbeamTimerService.git",
-    "tag": "0.1.10"
+    "tag": "0.1.11"
   },
   "platforms": {
     "ios": "7.0"

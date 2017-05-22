@@ -66,7 +66,7 @@
     self.clearSTimerToken = @"clear STimer token";
     self.executeSTimerToken = @"execute STimer token";
 #ifdef DEBUG
-    NSLog(@"\n======================\nSunbeam Timer Service version is %@\n======================", SUNBEAM_TIMER_SERVICE_VERSION);
+    NSLog(@"\n======================\nSunbeam Timer Service(https://github.com/sunbeamChen/SunbeamTimerService) version is %@\n======================", SUNBEAM_TIMER_SERVICE_VERSION);
 #endif
 }
 
